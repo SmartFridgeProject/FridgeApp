@@ -1,4 +1,4 @@
-package com.example.smartfridgeapp;
+package com.example.smartfridgephone;
 
 import org.junit.Test;
 
