@@ -1,2 +1,2 @@
-rootProject.name='SmartFridgePhone'
+rootProject.name='SmartFridgeApp'
 include ':app'
