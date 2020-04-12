@@ -21,6 +21,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".InventoryView"></activity>
+        <activity android:name=".GroceryList"></activity>
+        <activity android:name=".Profile"></activity>
+        <activity android:name=".Reminders"></activity>
+        <activity android:name=".Scan"></activity>
+        <activity android:name=".Settings"></activity>
     </application>
 
 </manifest>
