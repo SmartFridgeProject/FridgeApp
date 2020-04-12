@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
+import android.content.Intent;
+import android.widget.Button;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -91,17 +93,26 @@ public class FullscreenActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_fullscreen);
 
+        Button next = (Button) findViewById(R.id.button3);
+        next.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent myIntent = new Intent(view.getContext(), InventoryView.class);
+                startActivityForResult(myIntent, 0);
+            }
+
+        });
+
         mVisible = true;
         mContentView = findViewById(R.id.fullscreen_content);
 
-
-        // Set up the user interaction to manually show or hide the system UI.
+            // Set up the user interaction to manually show or hide the system UI.
         mContentView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 toggle();
             }
         });
+
 
         // Upon interacting with UI controls, delay any scheduled hide()
         // operations to prevent the jarring behavior of controls going away
