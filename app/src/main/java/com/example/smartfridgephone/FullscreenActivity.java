@@ -93,10 +93,55 @@ public class FullscreenActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_fullscreen);
 
-        Button next = (Button) findViewById(R.id.button3);
-        next.setOnClickListener(new View.OnClickListener() {
+        Button rem = (Button) findViewById(R.id.button1);
+        rem.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent myIntent = new Intent(view.getContext(), Reminders.class);
+                startActivityForResult(myIntent, 0);
+            }
+
+        });
+
+        Button groc = (Button) findViewById(R.id.button2);
+        groc.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent myIntent = new Intent(view.getContext(), GroceryList.class);
+                startActivityForResult(myIntent, 0);
+            }
+
+        });
+
+        Button inv = (Button) findViewById(R.id.button3);
+        inv.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent myIntent = new Intent(view.getContext(), InventoryView.class);
+                startActivityForResult(myIntent, 0);
+            }
+
+        });
+
+        Button prof = (Button) findViewById(R.id.button4);
+        prof.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent myIntent = new Intent(view.getContext(), Profile.class);
+                startActivityForResult(myIntent, 0);
+            }
+
+        });
+
+        Button sett = (Button) findViewById(R.id.button5);
+        sett.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent myIntent = new Intent(view.getContext(), Settings.class);
+                startActivityForResult(myIntent, 0);
+            }
+
+        });
+
+        Button scan = (Button) findViewById(R.id.button6);
+        scan.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent myIntent = new Intent(view.getContext(), Scan.class);
                 startActivityForResult(myIntent, 0);
             }
 
