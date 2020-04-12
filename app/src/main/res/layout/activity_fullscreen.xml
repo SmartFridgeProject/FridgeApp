@@ -33,12 +33,6 @@
                 android:layout_height="0dp"
                 android:layout_weight=".25"
                 android:text="Inventory"></Button>
-            <Button
-                android:id="@+id/button4"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight=".25"
-                android:text="Scan"></Button>
         </LinearLayout>
         <LinearLayout
             android:layout_width="0dp"
@@ -46,29 +40,23 @@
             android:layout_weight=".50"
             android:orientation="vertical">
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/button4"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight=".25"
                 android:text="Profile"></Button>
             <Button
-                android:id="@+id/button6"
+                android:id="@+id/button5"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight=".25"
                 android:text="Settings"></Button>
             <Button
-                android:id="@+id/button7"
+                android:id="@+id/button6"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight=".25"
-                android:text="button"></Button>
-            <Button
-                android:id="@+id/button8"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight=".25"
-                android:text="button"></Button>
+                android:text="Scan"></Button>
         </LinearLayout>
     </LinearLayout>
 </FrameLayout>
