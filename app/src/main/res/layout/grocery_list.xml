@@ -11,15 +11,219 @@
             android:gravity="center"
             android:layout_height="wrap_content"
             android:textColor="#000000"
-            android:textSize="30dp"
+            android:textSize="30sp"
             android:text="Grocery List" />
 
-        <Button android:text="Previous"
-            android:id="@+id/ButtonBack1"
-            android:layout_width="250px"
-            android:textSize="18px"
-            android:layout_height="55px">
-        </Button>
 
-    </LinearLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Quantity"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_column="1">
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Item"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_column="2">
+
+            </TextView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Remove"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_column="3">
+
+            </TextView>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/groceryrow1">
+
+
+            <TextView
+                android:text="1 stick"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_weight="1"/>
+            <TextView
+                android:text="Butter"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_weight="1"/>
+            <Button
+                android:text="Remove"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_weight="1"
+                android:id="@+id/groceryButton1"></Button>
+
+        </TableRow>
+<!--        2nd row -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/groceryrow2">
+
+
+            <TextView
+                android:text="1 12 pack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_weight="1"/>
+            <TextView
+                android:text="White Claw"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_weight="1"/>
+            <Button
+                android:text="Remove"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_weight="1"
+                android:id="@+id/groceryButton2"></Button>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/groceryrow3">
+
+
+            <TextView
+                android:text="3 gallons"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_weight="1"/>
+            <TextView
+                android:text="Milk"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_weight="1"/>
+            <Button
+                android:text="Remove"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_weight="1"
+                android:id="@+id/groceryButton3"></Button>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/groceryrow4">
+
+
+            <TextView
+                android:text="1 head"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_weight="1"/>
+            <TextView
+                android:text="lettuce"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_weight="1"/>
+            <Button
+                android:text="Remove"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_weight="1"
+                android:id="@+id/groceryButton4"></Button>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/groceryrow5">
+
+
+            <TextView
+                android:text="4 bags"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_weight="1"/>
+            <TextView
+                android:text="Grapes"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_weight="1"/>
+            <Button
+                android:text="Remove"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_weight="1"
+                android:id="@+id/groceryButton5"></Button>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/groceryrow6">
+
+
+            <TextView
+                android:text="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_weight="1"/>
+            <TextView
+                android:text="carrot"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_weight="1"/>
+            <Button
+                android:text="Remove"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_weight="1"
+                android:id="@+id/groceryButton6"></Button>
+
+        </TableRow>
+
+
+
+
+    </TableLayout>
+
+
+</LinearLayout>
 
