@@ -13,7 +13,7 @@
         android:textSize="30sp"
         android:text="Add Item to List" />
 
-    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <TableLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
 
@@ -29,9 +29,9 @@
 
             <EditText
                 android:id="@+id/ItemNameGList"
-                android:width="200px"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_width="274dp"
+                android:layout_height="wrap_content"
+                android:width="200px" />
         </TableRow>
 
         <TableRow>
