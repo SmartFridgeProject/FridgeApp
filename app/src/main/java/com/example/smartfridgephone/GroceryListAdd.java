@@ -23,25 +23,34 @@ public class GroceryListAdd extends AppCompatActivity {
 
     public void setSubmitButton(){
         Button submit = (Button) findViewById(R.id.grocerySubmitButton);
-        submit.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View view){
+        submit.setOnClickListener(new View.OnClickListener() {
 
-                //add not implemented, show dialog
+            public void onClick(final View view) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext());
-                builder.setTitle("Not implemented");
-                builder.setMessage("Add Item is not fully implemented");
-                builder.setPositiveButton("Back to Grocery List", new DialogInterface.OnClickListener() {
+                builder.setCancelable(true);
+                builder.setTitle("Not yet implemented");
+                builder.setMessage("Add item to grocery list has not yet been implemented");
+                builder.setPositiveButton("Back to List",
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Intent myIntent = new Intent(view.getContext(), GroceryList.class);
+                                startActivityForResult(myIntent, 0);
+                            }
+                        });
+                builder.setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        setContentView(R.layout.grocery_list);
+                        Intent myIntent = new Intent(view.getContext(), Settings.class);
+                        startActivityForResult(myIntent, 0);
                     }
                 });
 
-
                 AlertDialog dialog = builder.create();
                 dialog.show();
-                //setContentView(R.layout.grocery_list);
             }
+
         });
+
     }
 }
