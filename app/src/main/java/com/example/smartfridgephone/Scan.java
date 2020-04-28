@@ -17,15 +17,6 @@ public class Scan extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.scan);
 
-        Button next = (Button) findViewById(R.id.ButtonBack1);
-        next.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                Intent intent = new Intent();
-                setResult(RESULT_OK, intent);
-                finish();
-            }
-
-        });
         Button sc = (Button) findViewById(R.id.ScanButton);
         sc.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {

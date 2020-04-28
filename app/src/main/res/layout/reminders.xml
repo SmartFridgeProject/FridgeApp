@@ -11,7 +11,7 @@
         android:gravity="center"
         android:layout_height="wrap_content"
         android:textColor="#000000"
-        android:textSize="30sp"
+        android:textSize="30dp"
         android:text="Reminders" />
 
 
@@ -25,14 +25,14 @@
             android:id="@+id/notificationrow1">
             <TextView
                 android:text=" Only 74 White Claws Left est 1 day(s) left. \n"
-                android:textSize="24sp"
+                android:textSize="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_column="1"
                 android:layout_weight="3"/>
             <Button
                 android:text="Recipes?"
-                android:textSize="24sp"
+                android:textSize="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_column="4"
@@ -46,14 +46,14 @@
             android:id="@+id/notificationrow2">
             <TextView
                 android:text=" Peppers are expected to go bad in 2 day(s).\n"
-                android:textSize="24sp"
+                android:textSize="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_column="1"
                 android:layout_weight="3"/>
             <Button
                 android:text="Recipes?"
-                android:textSize="24sp"
+                android:textSize="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_column="4"
@@ -67,14 +67,14 @@
             android:id="@+id/notificationrow3">
             <TextView
                 android:text=" Milk expires in 3 day(s).\n"
-                android:textSize="24sp"
+                android:textSize="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_column="1"
                 android:layout_weight="3"/>
             <Button
                 android:text="Recipes?"
-                android:textSize="24sp"
+                android:textSize="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_column="4"
@@ -88,14 +88,14 @@
             android:id="@+id/notificationrow4">
             <TextView
                 android:text=" Cheese expires in 9 day(s).\n"
-                android:textSize="24sp"
+                android:textSize="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_column="1"
                 android:layout_weight="3"/>
             <Button
                 android:text="Recipes?"
-                android:textSize="24sp"
+                android:textSize="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_column="4"
@@ -111,9 +111,9 @@
     <Button
         android:id="@+id/add"
         android:layout_width="match_parent"
-        android:layout_height="50sp"
+        android:layout_height="50dp"
         android:text="Add/Remove"
-        android:textSize="24sp"/>
+        android:textSize="25dp"/>
 
 </LinearLayout>
 
