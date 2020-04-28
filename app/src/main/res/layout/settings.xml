@@ -25,25 +25,25 @@
                 android:layout_weight=".50"
                 android:orientation="vertical">
                 <Button
-                    android:id="@+id/button1"
+                    android:id="@+id/passcode"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight=".25"
-                    android:text="Change Passcode"
+                    android:text="Change Drawer Passcode"
                     android:textSize="25dp"></Button>
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/buttonManage"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight=".25"
                     android:text="Manage"
                     android:textSize="25dp"></Button>
                 <Button
-                    android:id="@+id/button3"
+                    android:id="@+id/buttonWireless"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight=".25"
-                    android:text="Wireless"
+                    android:text="Network"
                     android:textSize="25dp"></Button>
             </LinearLayout>
             <LinearLayout
@@ -52,14 +52,14 @@
                 android:layout_weight=".50"
                 android:orientation="vertical">
                 <Button
-                    android:id="@+id/button4"
+                    android:id="@+id/buttonNotifC"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight=".25"
                     android:text="Notifications"
                     android:textSize="25dp"></Button>
                 <Button
-                    android:id="@+id/button5"
+                    android:id="@+id/payment"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight=".25"
@@ -67,7 +67,7 @@
                     android:textSize="25dp"></Button>
 
                 <Button
-                    android:id="@+id/button6"
+                    android:id="@+id/otherServices"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight=".25"
