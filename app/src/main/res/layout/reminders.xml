@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/notificationrow1">
             <TextView
-                android:text=" Only 74 White Claws Left est 1 day(s) left. \n"
+                android:text="Only 74 White Claws Left est 1 day(s) left. \n"
                 android:textSize="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -33,10 +33,8 @@
             <Button
                 android:text="Recipes?"
                 android:textSize="25dp"
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_column="4"
-                android:layout_weight="1"
+                android:layout_width="match_parent"
                 android:id="@+id/notifx1"/>
         </TableRow>
 
@@ -45,7 +43,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/notificationrow2">
             <TextView
-                android:text=" Peppers are expected to go bad in 2 day(s).\n"
+                android:text="Peppers are expected to go bad in 2 day(s).\n"
                 android:textSize="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -56,8 +54,6 @@
                 android:textSize="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_column="4"
-                android:layout_weight="1"
                 android:id="@+id/notifx2"/>
         </TableRow>
 
@@ -66,7 +62,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/notificationrow3">
             <TextView
-                android:text=" Milk expires in 3 day(s).\n"
+                android:text="Milk will expires in 3 day(s).\n"
                 android:textSize="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -77,8 +73,6 @@
                 android:textSize="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_column="4"
-                android:layout_weight="1"
                 android:id="@+id/notifx3"/>
         </TableRow>
 
@@ -87,7 +81,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/notificationrow4">
             <TextView
-                android:text=" Cheese expires in 9 day(s).\n"
+                android:text="Cheese expires in 9 day(s).\n"
                 android:textSize="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -98,8 +92,6 @@
                 android:textSize="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_column="4"
-                android:layout_weight="1"
                 android:id="@+id/notifx4"/>
         </TableRow>
 
