@@ -1,5 +1,6 @@
 package com.example.smartfridgephone;
 
+import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -22,35 +23,34 @@ public class GroceryListAdd extends AppCompatActivity {
 
     public void setSubmitButton(){
         Button submit = (Button) findViewById(R.id.grocerySubmitButton);
-        submit.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View view){
-                TableLayout tl = (TableLayout) findViewById(R.id.gListTable);
-                TableRow tr = new TableRow(view.getContext());
-                tr.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
-                TextView text1 = new TextView(view.getContext());
-                EditText quant = (EditText)findViewById(R.id.ItemQuantityGList);
-                text1.setText(quant.getText().toString());
-                text1.setGravity(1);
-                text1.setLayoutParams(new TableRow.LayoutParams(1));
+        submit.setOnClickListener(new View.OnClickListener() {
 
-                TextView text2 = new TextView(view.getContext());
-                EditText item = (EditText)findViewById(R.id.ItemNameGList);
-                text2.setText(item.getText().toString());
-                text2.setGravity(1);
-                text2.setLayoutParams(new TableRow.LayoutParams(2));
+            public void onClick(final View view) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext());
+                builder.setCancelable(true);
+                builder.setTitle("Not yet implemented");
+                builder.setMessage("Add item to grocery list has not yet been implemented");
+                builder.setPositiveButton("Back to List",
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Intent myIntent = new Intent(view.getContext(), GroceryList.class);
+                                startActivityForResult(myIntent, 0);
+                            }
+                        });
+                builder.setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent myIntent = new Intent(view.getContext(), Settings.class);
+                        startActivityForResult(myIntent, 0);
+                    }
+                });
 
-                Button b = new Button(view.getContext());
-                b.setText("Remove");
-                b.setGravity(1);
-                b.setLayoutParams(new TableRow.LayoutParams(3));
-
-                tr.addView(text1);
-                tr.addView(text2);
-                tr.addView(b);
-                tl.addView(tr, new TableLayout.LayoutParams(TableLayout.LayoutParams.MATCH_PARENT, TableLayout.LayoutParams.WRAP_CONTENT));
-                System.out.println("HERE");
-                setContentView(R.layout.grocery_list);
+                AlertDialog dialog = builder.create();
+                dialog.show();
             }
+
         });
+
     }
 }
