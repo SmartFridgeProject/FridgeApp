@@ -43,7 +43,7 @@ public class GroceryListAdd extends AppCompatActivity {
                 builder.setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        Intent myIntent = new Intent(view.getContext(), Settings.class);
+                        Intent myIntent = new Intent(view.getContext(), GroceryList.class);
                         startActivityForResult(myIntent, 0);
                     }
                 });

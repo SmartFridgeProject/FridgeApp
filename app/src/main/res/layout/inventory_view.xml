@@ -37,7 +37,7 @@
                 android:layout_height="wrap_content"
                 android:layout_column="4"
                 android:layout_weight="1"
-                android:id="@+id/notifx1"/>
+                android:id="@+id/invnotifx1"/>
         </TableRow>
 
         <TableRow
@@ -58,7 +58,7 @@
                 android:layout_height="wrap_content"
                 android:layout_column="4"
                 android:layout_weight="1"
-                android:id="@+id/notifx2"/>
+                android:id="@+id/invnotifx2"/>
         </TableRow>
 
         <TableRow
@@ -79,7 +79,7 @@
                 android:layout_height="wrap_content"
                 android:layout_column="4"
                 android:layout_weight="1"
-                android:id="@+id/notifx3"/>
+                android:id="@+id/invnotifx3"/>
         </TableRow>
 
         <TableRow
@@ -87,7 +87,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/notificationrow4">
             <TextView
-                android:text=" Cheese - Chedder\n"
+                android:text=" Cheese - Cheddar\n"
                 android:textSize="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -100,7 +100,7 @@
                 android:layout_height="wrap_content"
                 android:layout_column="4"
                 android:layout_weight="1"
-                android:id="@+id/notifx4"/>
+                android:id="@+id/invnotifx4"/>
         </TableRow>
 
         <TableRow
@@ -121,13 +121,13 @@
                 android:layout_height="wrap_content"
                 android:layout_column="4"
                 android:layout_weight="1"
-                android:id="@+id/notifx5"/>
+                android:id="@+id/invnotifx5"/>
         </TableRow>
 
     </TableLayout>
 
     <Button
-        android:id="@+id/add"
+        android:id="@+id/addInvent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Add/Remove"
