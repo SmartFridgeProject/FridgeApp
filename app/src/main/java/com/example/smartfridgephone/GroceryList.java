@@ -6,27 +6,63 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.app.AlertDialog;
+import java.util.ArrayList;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 
-
 public class GroceryList extends AppCompatActivity {
+    ArrayList<String> groceries = new ArrayList<String>();
 
     /** Called when the activity is first created. */
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.grocery_list);
 
+        //hard-coded demo list
+        setDemoList();
 
-    //hard-coded for now for demo purposes
+        setHomeButton();
+
+        //hard-coded for now for demo purposes
         setButton1();
         setButton2();
         setButton3();
         setButton4();
         setButton5();
         setButton6();
+        setAddGroceriesButton();
 
+    }
+    public void setDemoList(){
+        groceries.add("butter");
+        groceries.add("White Claw");
+        groceries.add("Milk");
+        groceries.add("lettuce");
+        groceries.add("grapes");
+        groceries.add("carrot");
+    }
 
+    public void setAddGroceriesButton(){
+        Button addButton = (Button) findViewById(R.id.AddGroceriesButton);
+        addButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(view.getContext(), GroceryListAdd.class);
+                startActivityForResult(myIntent, 0);
+            }
+        });
+    }
+
+    public void setHomeButton(){
+        Button addButton = (Button) findViewById(R.id.AddGroceriesHomeButton);
+        addButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(view.getContext(), FullscreenActivity.class);
+                startActivityForResult(myIntent, 0);
+            }
+        });
     }
 
     public void setButton1(){
@@ -43,6 +79,7 @@ public class GroceryList extends AppCompatActivity {
                             public void onClick(DialogInterface dialog, int which) {
                                 View row = findViewById(R.id.groceryrow1);
                                 row.setVisibility(View.GONE);
+                                groceries.remove("butter");
                             }
                         });
                 builder.setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
@@ -72,6 +109,7 @@ public class GroceryList extends AppCompatActivity {
                             public void onClick(DialogInterface dialog, int which) {
                                 View row = findViewById(R.id.groceryrow2);
                                 row.setVisibility(View.GONE);
+                                groceries.remove("White Claw");
                             }
                         });
                 builder.setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
@@ -102,6 +140,7 @@ public class GroceryList extends AppCompatActivity {
                             public void onClick(DialogInterface dialog, int which) {
                                 View row = findViewById(R.id.groceryrow3);
                                 row.setVisibility(View.GONE);
+                                groceries.remove("Milk");
                             }
                         });
                 builder.setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
@@ -132,6 +171,7 @@ public class GroceryList extends AppCompatActivity {
                             public void onClick(DialogInterface dialog, int which) {
                                 View row = findViewById(R.id.groceryrow4);
                                 row.setVisibility(View.GONE);
+                                groceries.remove("lettuce");
                             }
                         });
                 builder.setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
@@ -161,6 +201,7 @@ public class GroceryList extends AppCompatActivity {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 View row = findViewById(R.id.groceryrow5);
+                                groceries.remove("grapes");
                                 row.setVisibility(View.GONE);
                             }
                         });
@@ -191,6 +232,7 @@ public class GroceryList extends AppCompatActivity {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 View row = findViewById(R.id.groceryrow6);
+                                groceries.remove("carrot");
                                 row.setVisibility(View.GONE);
                             }
                         });

@@ -17,7 +17,8 @@
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:id="@+id/gListTable">
         <TableRow
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
@@ -223,6 +224,27 @@
 
 
     </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/AddGroceriesHomeButton"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50sp"
+            android:text="Home"></Button>
+
+        <Button
+            android:id="@+id/AddGroceriesButton"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50sp"
+            android:text="Add Item"></Button>
+
+    </LinearLayout>
 
 
 </LinearLayout>
