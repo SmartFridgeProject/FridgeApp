@@ -21,21 +21,21 @@
                 android:layout_height="0dp"
                 android:layout_weight=".25"
                 android:text="Reminders"
-                android:textSize="50sp"></Button>
+                android:textSize="25dp"></Button>
             <Button
                 android:id="@+id/button2"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight=".25"
                 android:text="Grocery List"
-                android:textSize="50sp"></Button>
+                android:textSize="25dp"></Button>
             <Button
                 android:id="@+id/button3"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight=".25"
                 android:text="Inventory"
-                android:textSize="50sp"></Button>
+                android:textSize="25dp"></Button>
         </LinearLayout>
         <LinearLayout
             android:layout_width="0dp"
@@ -48,14 +48,14 @@
                 android:layout_height="0dp"
                 android:layout_weight=".25"
                 android:text="Profile"
-                android:textSize="50sp"></Button>
+                android:textSize="25dp"></Button>
             <Button
                 android:id="@+id/button5"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight=".25"
                 android:text="Settings"
-                android:textSize="50sp"></Button>
+                android:textSize="25dp"></Button>
 
             <Button
                 android:id="@+id/button6"
@@ -63,7 +63,7 @@
                 android:layout_height="0dp"
                 android:layout_weight=".25"
                 android:text="Scan"
-                android:textSize="50sp"></Button>
+                android:textSize="25dp"></Button>
         </LinearLayout>
     </LinearLayout>
 </FrameLayout>

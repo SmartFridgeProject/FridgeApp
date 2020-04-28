@@ -11,7 +11,7 @@
         android:gravity="center"
         android:layout_height="wrap_content"
         android:textColor="#000000"
-        android:textSize="30sp"
+        android:textSize="30dp"
         android:text="Inventory" />
 
 
@@ -25,14 +25,14 @@
             android:id="@+id/notificationrow1">
             <TextView
                 android:text=" White Claws\n"
-                android:textSize="36sp"
+                android:textSize="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_column="1"
                 android:layout_weight="3"/>
             <Button
                 android:text="74"
-                android:textSize="36sp"
+                android:textSize="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_column="4"
@@ -46,14 +46,14 @@
             android:id="@+id/notificationrow2">
             <TextView
                 android:text=" Peppers - Red \n"
-                android:textSize="36sp"
+                android:textSize="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_column="1"
                 android:layout_weight="3"/>
             <Button
                 android:text="4"
-                android:textSize="36sp"
+                android:textSize="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_column="4"
@@ -67,14 +67,14 @@
             android:id="@+id/notificationrow3">
             <TextView
                 android:text=" Milk - Gallon \n"
-                android:textSize="36sp"
+                android:textSize="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_column="1"
                 android:layout_weight="3"/>
             <Button
                 android:text="1"
-                android:textSize="36sp"
+                android:textSize="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_column="4"
@@ -88,14 +88,14 @@
             android:id="@+id/notificationrow4">
             <TextView
                 android:text=" Cheese - Chedder\n"
-                android:textSize="36sp"
+                android:textSize="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_column="1"
                 android:layout_weight="3"/>
             <Button
                 android:text="8oz"
-                android:textSize="36sp"
+                android:textSize="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_column="4"
@@ -109,14 +109,14 @@
             android:id="@+id/notificationrow5">
             <TextView
                 android:text=" Eggs - Dozen \n"
-                android:textSize="36sp"
+                android:textSize="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_column="1"
                 android:layout_weight="3"/>
             <Button
                 android:text="9"
-                android:textSize="36sp"
+                android:textSize="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_column="4"
@@ -131,6 +131,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Add/Remove"
-        android:textSize="36sp"/>
+        android:textSize="25dp"/>
 
 </LinearLayout>
