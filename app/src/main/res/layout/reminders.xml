@@ -45,7 +45,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/notificationrow2">
             <TextView
-                android:text=" Peppers are expected to go bad in 2 day(s).\m"
+                android:text=" Peppers are expected to go bad in 2 day(s).\n"
                 android:textSize="24sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
