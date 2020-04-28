@@ -1,5 +1,6 @@
 package com.example.smartfridgephone;
 
+import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import android.widget.EditText;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -49,7 +51,21 @@ public class GroceryListAdd extends AppCompatActivity {
                 tr.addView(b);
                 tl.addView(tr, new TableLayout.LayoutParams(TableLayout.LayoutParams.MATCH_PARENT, TableLayout.LayoutParams.WRAP_CONTENT));
                 System.out.println("HERE");
-                setContentView(R.layout.grocery_list);
+                //setContentView(R.layout.grocery_list);
+                //add not implemented, show dialog
+                AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext());
+                builder.setTitle("Not implemented");
+                builder.setMessage("Add Item is not fully implemented");
+                builder.setPositiveButton("Back to Grocery List", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        setContentView(R.layout.grocery_list);
+                    }
+                });
+
+
+                AlertDialog dialog = builder.create();
+                dialog.show();
             }
         });
     }
