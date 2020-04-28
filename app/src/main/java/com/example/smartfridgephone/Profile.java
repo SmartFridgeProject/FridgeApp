@@ -15,14 +15,5 @@ public class Profile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.profile);
 
-        Button next = (Button) findViewById(R.id.ButtonBack1);
-        next.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                Intent intent = new Intent();
-                setResult(RESULT_OK, intent);
-                finish();
-            }
-
-        });
     }
 }

@@ -102,8 +102,8 @@ public class FullscreenActivity extends AppCompatActivity {
 
         });
 
-        Button groc = (Button) findViewById(R.id.button2);
-        groc.setOnClickListener(new View.OnClickListener() {
+        Button grocery = (Button) findViewById(R.id.button2);
+        grocery.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent myIntent = new Intent(view.getContext(), GroceryList.class);
                 startActivityForResult(myIntent, 0);

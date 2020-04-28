@@ -11,6 +11,7 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class GroceryListAdd extends AppCompatActivity {
@@ -23,6 +24,7 @@ public class GroceryListAdd extends AppCompatActivity {
 
     public void setSubmitButton(){
         Button submit = (Button) findViewById(R.id.grocerySubmitButton);
+
         submit.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(final View view) {

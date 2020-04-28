@@ -1,25 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"  >
+
+    <TextView
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:background="#ffffff"  >
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:text="Reminders" />
 
-        <TextView
-            android:layout_width="fill_parent"
-            android:gravity="center"
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#000000"
-            android:textSize="30dp"
-            android:text="Reminders" />
+            android:id="@+id/notificationrow1">
+            <TextView
+                android:text=" Only 74 White Claws Left est 1 day(s) left. \n"
+                android:textSize="24sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_weight="3"/>
+            <Button
+                android:text="Recipes?"
+                android:textSize="24sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="4"
+                android:layout_weight="1"
+                android:id="@+id/notifx1"/>
+        </TableRow>
 
-        <Button android:text="Previous"
-            android:id="@+id/ButtonBack1"
-            android:layout_width="250px"
-            android:textSize="18px"
-            android:layout_height="55px">
-        </Button>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/notificationrow2">
+            <TextView
+                android:text=" Peppers are expected to go bad in 2 day(s).\n"
+                android:textSize="24sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_weight="3"/>
+            <Button
+                android:text="Recipes?"
+                android:textSize="24sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="4"
+                android:layout_weight="1"
+                android:id="@+id/notifx2"/>
+        </TableRow>
 
-    </LinearLayout>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/notificationrow3">
+            <TextView
+                android:text=" Milk expires in 3 day(s).\n"
+                android:textSize="24sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_weight="3"/>
+            <Button
+                android:text="Recipes?"
+                android:textSize="24sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="4"
+                android:layout_weight="1"
+                android:id="@+id/notifx3"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/notificationrow4">
+            <TextView
+                android:text=" Cheese expires in 9 day(s).\n"
+                android:textSize="24sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_weight="3"/>
+            <Button
+                android:text="Recipes?"
+                android:textSize="24sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="4"
+                android:layout_weight="1"
+                android:id="@+id/notifx4"/>
+        </TableRow>
+
+
+
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:text="Add/Remove"
+        android:textSize="24sp"/>
+
+</LinearLayout>
 
