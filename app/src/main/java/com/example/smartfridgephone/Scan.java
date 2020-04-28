@@ -23,9 +23,21 @@ public class Scan extends AppCompatActivity {
                 Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
                 startActivity(intent);
                 setResult(RESULT_OK, intent);
+
+
             }
 
         });
 
+        Button proc1 = (Button) findViewById(R.id.ScanButton2);
+        proc1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+
+                Intent myIntent = new Intent(view.getContext(), VerifyScan.class);
+                startActivityForResult(myIntent, 0);
+
+            }
+
+        });
     }
 }
